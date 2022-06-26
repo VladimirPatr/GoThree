@@ -1,0 +1,36 @@
+
+.gallary__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gallary__item {
+
+    flex-basis: 580px;
+    background-size: cover; 
+    height: 349px; 
+    position: relative;
+}
+.gallary__item_1 {
+    background-image: url(../img/gallery-1.jpg);
+}
+.gallary__item_2 {
+    background-image: url(../img/gallery-2.jpg);
+}
+.gallary__item_3 {
+    background-image: url(../img/gallery-3.jpg);
+}
+.gallary__item_4 {
+    background-image: url(../img/gallery-4.jpg);
+}
+.gallary__item span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);      
+}

@@ -1,0 +1,46 @@
+.pluses h2 {
+  
+    text-align: center;
+}
+
+.pluses__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.pluses__item {
+    flex-basis: 380px;
+    height: 228px;
+    background-size: cover; 
+    position: relative;
+}
+.pluses__item_1 {
+    background-image: url(../img/pluses-1.jpg);
+}
+.pluses__item_2 {
+    background-image: url(../img/pluses-2.jpg);
+}
+.pluses__item_3 {
+    background-image: url(../img/pluses-3.jpg);
+}
+.pluses__item_4 {
+    background-image: url(../img/pluses-4.jpg);
+}
+.pluses__item_5 {
+    background-image: url(../img/pluses-5.jpg);
+}
+.pluses__item_6 {
+    background-image: url(../img/pluses-6.jpg);
+}
+
+.pluses__item span{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+
+    position: absolute;
+    left: 50%;
+    top: 166px;
+    left: 40px;
+}
