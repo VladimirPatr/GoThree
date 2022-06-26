@@ -34,9 +34,19 @@
 
 .social__icon {
     width: 48px;
+    height: 48px;
     display: inline-block;
     margin-right: 28px;
+    border-radius: 50px;
+    overflow: hidden;
+
 }
+.social__icon img {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+}
+
 .footer__wrapper-map {
     flex-basis: 680px;
 }
@@ -55,3 +65,11 @@
 .footer__bottom__wrapper p:nth-child(2) {
     text-align: right;
 }
+.social__icon a svg:hover #instagram, .social__icon a svg:hover #vk, .social__icon a svg:hover #facebook, .social__icon a svg:hover #telegramm,
+.social__icona svg:focus #instagram, .social__icon a svg:focus #vk, .social__icon a svg:focus #facebook, .social__icon a svg:focus #telegramm { 
+    fill:#EADEED;
+  }
+  .social__icon a svg:active #instagram, .social__icon a svg:active #vk, .social__icon a svg:active #facebook, .social__icon a svg:active #telegramm { 
+    fill:#CD06FF;
+  }
+

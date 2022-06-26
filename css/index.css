@@ -54,7 +54,9 @@ iframe {
     overflow: hidden;
 }
 
-
+button {
+    cursor: pointer;
+}
 h1 {
     font-size: 150px;
     font-weight: 900;

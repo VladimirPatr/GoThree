@@ -25,6 +25,22 @@
     right: 70px;
     top: calc(50% - 20px);
 }
+.questions__item:hover:after{
+    background-image: url(../img/open-hover.svg);
+}
+.questions__item:active:after {
+    background-image: url(../img/open-active.svg);
+}
+
 .questions__item:nth-child(odd):after {  
     background-image: url(../img/open-purple.svg);
+}
+.questions__item:nth-child(odd):hover:after {  
+    background-image: url(../img/open-purple-hover.svg);
+}
+.questions__item:nth-child(odd):active:after {  
+    background-image: url(../img/open-purple-active.svg);
+}
+.questions__item:nth-child(odd):focus:after, .questions__item:nth-child(odd):focus:after {  
+    background-image: none;
 }

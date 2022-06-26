@@ -55,10 +55,33 @@
     border: none;
     outline: none;
 }
+.main-header__btn:hover, .main-header__btn:focus {
+    background-color:#840AA3;
+    
+}
+.main-header__btn:hover:active {
+    background-color:#640AA3;
+    
+}
 .link-down {
+    display: inline-block;
     position: absolute;
     bottom: 90px;
     left: 50%;
     transform: translateX(-50%);
-    
+    width: 97px;
+    height: 97px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/icon-down.svg);  
+
+}
+.link-down:hover {  
+    background-image: url(../img/icon-down-hover.svg);   
+}
+.link-down:active {  
+    background-image: url(../img/icon-down-active.svg);   
+}
+.link-down:focus {  
+    border:1px solid #CD06FF;  
 }
