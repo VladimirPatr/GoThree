@@ -14,6 +14,8 @@
     height: 228px;
     background-size: cover; 
     position: relative;
+
+    transition: transform 1s ease-in-out;
 }
 .pluses__item_1 {
     background-image: url(../img/pluses-1.jpg);
@@ -43,4 +45,8 @@
     left: 50%;
     top: 166px;
     left: 40px;
+}
+
+.pluses__item:hover {
+    transform: scale(1.1);
 }

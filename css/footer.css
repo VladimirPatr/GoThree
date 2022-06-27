@@ -65,6 +65,10 @@
 .footer__bottom__wrapper p:nth-child(2) {
     text-align: right;
 }
+.social__icon a svg path {
+    transition: fill 2s ease-in-out;
+}
+
 .social__icon a svg:hover #instagram, .social__icon a svg:hover #vk, .social__icon a svg:hover #facebook, .social__icon a svg:hover #telegramm,
 .social__icona svg:focus #instagram, .social__icon a svg:focus #vk, .social__icon a svg:focus #facebook, .social__icon a svg:focus #telegramm { 
     fill:#EADEED;

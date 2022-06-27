@@ -24,6 +24,9 @@
     position: absolute;
     right: 70px;
     top: calc(50% - 20px);
+    opacity: 1;
+    
+    transition: background-image 2s ease-in-out, opacity 2s ease-in-out;
 }
 .questions__item:hover:after{
     background-image: url(../img/open-hover.svg);
@@ -42,5 +45,5 @@
     background-image: url(../img/open-purple-active.svg);
 }
 .questions__item:nth-child(odd):focus:after, .questions__item:nth-child(odd):focus:after {  
-    background-image: none;
+    opacity: 0;
 }
