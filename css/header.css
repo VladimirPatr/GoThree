@@ -11,6 +11,13 @@
     gap: 40px;
     text-transform: uppercase;
     font-size: 22px;
+    
+}
+.header__menu a:hover{
+    transition: color .5s ease-in-out;
+}
+.header__menu a:hover{
+    color: #640AA3;
 }
 .header__btn {
     text-transform: uppercase;
@@ -22,7 +29,7 @@
     border: solid 3px #CD06FF;
     border-radius: 10px;
 
-    transition: border 2s ease-in-out, background-color 1s ease-in-out;
+    transition: border .5s ease-in-out, background-color 1s ease-in-out;
 
 }
 .header__btn:hover, .header__btn:focus {

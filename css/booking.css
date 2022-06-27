@@ -37,7 +37,7 @@
     text-transform: uppercase;
     border: 3px solid transparent;
 
-    transition: background 1s ease-in-out,  border 2s ease-in-out;
+    transition: background .5s ease-in-out,  border .5s ease-in-out;
 }
 .booking__item label:hover, .booking__item label:focus {
     background: #EADEED;
@@ -85,7 +85,7 @@
 	background-color: #fff;
     border: 1px solid transparent;
 
-    transition: border 5s ease-in-out;
+    transition: border .5s ease-in-out;
 }
 .booking__item__set label:focus:before {
     border: 1px solid #CD06FF;
@@ -96,7 +96,7 @@
 }
 .booking__item__set_radio label:after {
     background: transparent;
-    transition: border 2s ease-in-out;
+    transition: border .5s ease-in-out;
 }  
 .booking__item__set_radio label:focus:after{
    border: 1px solid blue;
@@ -153,14 +153,15 @@
     border: 2px solid transparent;
     width: 100%;
 
-    transition: border 2s ease-in-out;
+    transition: border .5s ease-in-out;
 
 }
-.booking__label:active {
+.booking__label:focus {
     border: 2px solid #CD06FF;
 }
 .booking__label input {
     width: 100%;
+    outline: none;
 }
 
 .booking__label:before {
@@ -193,7 +194,7 @@
     border-radius: 10px;
     border: 3px solid transparent;
 
-    transition: background 1s ease-in-out, color 1s ease-in-out, border 2s ease-in-out;
+    transition: background .5s ease-in-out, color .5s ease-in-out, border .5s ease-in-out;
 }
 .btn__form:hover {
     background: #EADEED;

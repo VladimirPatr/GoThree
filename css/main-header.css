@@ -55,7 +55,7 @@
     border: none;
     outline: none;
 
-    transition: background-color 2s ease-in-out;
+    transition: background-color .5s ease-in-out;
 }
 .main-header__btn:hover, .main-header__btn:focus {
     background-color:#840AA3;
@@ -77,7 +77,7 @@
     background-size: cover;
     background-image: url(../img/icon-down.svg);  
 
-    transition: border 2s ease-in-out, background-image 2s ease-in-out;
+    transition: border .5s ease-in-out, background-image 2s ease-in-out;
 }
 .link-down:hover {  
     background-image: url(../img/icon-down-hover.svg);   

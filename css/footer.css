@@ -24,12 +24,21 @@
 .contacts__item_tel {
     background-image: url(../img/icon-tel.svg);
     display: inline-block;
-    margin-bottom: 11px;    
+    margin-bottom: 11px;
+    transition: color .5s ease-in-out;    
 }
 .contacts__item_mail {
     display: block;
     background-image: url(../img/icon-mail.svg);
     margin-bottom: 40px;
+    transition: color 1s ease-in-out; 
+}
+.footer__mail {
+    transition: color .5s ease-in-out;  
+}
+
+.contacts__item_tel:hover, .contacts__item_mail:hover, .footer__mail:hover {
+    color: #CD06FF;
 }
 
 .social__icon {
@@ -66,7 +75,7 @@
     text-align: right;
 }
 .social__icon a svg path {
-    transition: fill 2s ease-in-out;
+    transition: fill .5s ease-in-out;
 }
 
 .social__icon a svg:hover #instagram, .social__icon a svg:hover #vk, .social__icon a svg:hover #facebook, .social__icon a svg:hover #telegramm,
