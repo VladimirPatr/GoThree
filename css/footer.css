@@ -38,7 +38,7 @@
 }
 
 .contacts__item_tel:hover, .contacts__item_mail:hover, .footer__mail:hover {
-    color: #CD06FF;
+    color: var( --text-color, #CD06FF);
 }
 
 .social__icon {

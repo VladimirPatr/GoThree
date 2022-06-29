@@ -17,13 +17,13 @@
     transition: color .5s ease-in-out;
 }
 .header__menu a:hover{
-    color: #640AA3;
+    color: var(--btn-bg-color-h, #840AA3);
 }
 .header__btn {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 22px;
-    color: #fff;
+    color:  var(--main-color, #FFF);
     background: transparent;
     padding: 12px 32px 13px 32px;
     border: solid 3px #CD06FF;
@@ -34,9 +34,9 @@
 }
 .header__btn:hover, .header__btn:focus {
     border: 3px solid #6C0287;
-    background-color:  #6C0287;;
+    background-color: var(--btn-bg-color, #6C0287);
 }
 .header__btn:active {
     border: 3px solid #640AA3;
-    background-color:  #640AA3;
+    background-color:  var(--btn-bg-color-a, #640AA3);
 }
