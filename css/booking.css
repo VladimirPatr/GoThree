@@ -1,3 +1,6 @@
+input {
+    border: none;
+}
 .booking  { 
     background-color: var(--bg-color-faq, #440F51);
 }
@@ -8,11 +11,12 @@
 .form__item {
     margin-bottom: 60px;
 }
-.form__item>legend{
+.form__item>legend {
     text-align: center;
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .booking__list {
@@ -114,7 +118,7 @@
     row-gap: 36px;
 }
 .booking__item__date input, .booking__item__date  button{
-    height: 48px;;
+    height: 48px;
 }
 .booking__item__date:nth-child(2) {
     flex-basis: 280px;
@@ -193,6 +197,7 @@
     padding: 6px;
     border-radius: 10px;
     border: 3px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     transition: background .5s ease-in-out, color .5s ease-in-out, border .5s ease-in-out;
 }
@@ -210,6 +215,193 @@
     background: var(--main-color, #FFF);
     border: 3px solid #640AA3;
 }
+
+@media (max-width: 1024px) {
+    .booking {
+        padding: 60px 0 60px;
+    }
+    .booking h2 {
+        margin-bottom: 41px;
+    }
+    .form__item>legend{
+        margin-bottom: 26px;
+    }
+    .booking__item {
+        flex-basis: 180px;
+    } 
+    .booking__item label {
+        text-align: center;
+        padding: 10px 20px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 24px;
+    }   
+    .booking__item__date input, .booking__item__date  button{
+        height: 48px;;
+    }
+    .booking__item__date:nth-child(2) {
+        flex-basis: 251px;
+    }
+    .booking__item__date:nth-child(3) {
+        flex-basis: 254px;
+    }
+
+    .btn__form {
+        font-weight: 700;
+        font-size: 18px;
+        padding: 13px;
+    } 
+}
+@media (max-width: 768px) {
+    .booking {
+        padding: 50px 0 50px;
+    }
+    .booking__item {
+        flex-basis: 150px;
+    } 
+    .booking__item label {
+        padding: 9px 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }  
+    .form__item {
+        margin-bottom: 50px;
+    }
+    .form__item:last-child {
+        margin-bottom: 0;
+    }
+    .form__item>legend {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+    
+    .booking__item label {
+        width: 150px;
+        padding: 9px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .booking__list__set {
+       flex-wrap: wrap;
+       column-gap: 60px;
+       row-gap: 32px;
+    }
+    .booking__item__set {
+        flex-basis: 47%;
+    }   
+    .booking__item__set label {
+        padding-left: 60px;
+    }   
+    .booking__item__set label:before, .booking__item__set_radio label:after {
+        width: 40px;
+        height: 40px;
+    }
+    .booking__item__set {
+        gap: 40px;
+    }
+    .booking__list__date {
+        flex-wrap: wrap;
+    }
+    .booking__item__date {
+        flex-direction: row;
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+    .booking__item__date input, .booking__item__date  button{
+        height: 52px;
+    }
+    .booking__item__date:nth-child(1) {
+        margin-bottom: 64px;
+    }
+    .booking__list_wrapper, .booking__item__date:nth-child(2) {
+        flex-basis: 280px;
+    }
+    .select-date_count, .booking__item__date:nth-child(3) {
+        flex-basis: 300px;
+    }
+    .booking__item__date:nth-child(2) {
+        flex-direction: column;
+        gap: 36px;
+        justify-content: start;
+    }
+    .booking__item__date:nth-child(3) {
+        flex-direction: column;
+    }
+  
+}   
+
+@media (max-width: 320px) {
+    .booking h2 {
+        margin-bottom: 33px;
+    }
+    .booking__list {
+
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .booking__item {
+        flex-basis: 120px;
+    } 
+    .booking__item label {
+        padding: 6px 10px;
+        font-size: 14px;
+        line-height: 18px;
+        width: 100%;
+    }  
+    .form__item {
+        margin-bottom: 30px;
+    }
+    .form__item>legend {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .booking__item label:last-child {
+        padding: 6px 12px;
+    }
+    .booking__item__set>legend {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 35px;
+    }
+    
+    
+    .booking__list__date {
+        flex-wrap: wrap;
+    }
+    .booking__item__date {
+        flex-basis: 100%;
+        row-gap: 36px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .booking__item__date:nth-child(1){
+        flex-wrap: wrap;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .booking__item__date:nth-child(2), .booking__item__date:nth-child(3) {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .booking__item__date:nth-child(2) {
+        margin-bottom: 46px;
+    }
+    .select-data_number, .select-date_time {
+        flex-basis: 46%;
+        padding: 0;
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .select-date_count {
+        font-size: 14px;
+        line-height: 18px;
+    }
+} 
 
 
 

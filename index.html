@@ -11,16 +11,21 @@
 <body class="game-over">   
     <header class="header">
         <div class="container container_header">
+            <a href="#" class="menu-burger">
+                <svg width="54" height="29" viewBox="0 0 54 29" fill="none" xmlns="http://www.w3.org/2000/svg" id="burger">
+                    <rect width="54" height="5" rx="2" fill="#6C0287"/>
+                    <rect y="12" width="54" height="5" rx="2" fill="#6C0287"/>
+                    <rect y="24" width="31" height="5" rx="2" fill="#6C0287"/>
+                </svg>        
+            </a>
             <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
-            <nav>
-                <ul class="header__menu">
-                    <li><a href="#">залы</a></li>
-                    <li><a href="#">о нас</a></li>
-                    <li><a href="#">бронь</a></li>
-                    <li><a href="#">отзывы</a></li>
-                    <li><a href="#">контакты</a></li>
-                </ul>
-            </nav>
+            <ul class="header__menu">
+                <li><a href="#gallary">залы</a></li>
+                <li><a href="#about-us">о нас</a></li>
+                <li><a href="#booking">бронь</a></li>
+                <li><a href="#reviews">отзывы</a></li>
+                <li><a href="#footer">контакты</a></li>
+            </ul>
             <button class="header__btn">заказать звонок</button> 
         </div>       
     </header>       
@@ -42,10 +47,10 @@
                     </li>
                 </ul>
                 <button class="main-header__btn">забронировать</button>
-                <a href="#" class="link-down"></a>
+                <a href="#pluses" class="link-down"></a>
             </div>     
         </section> 
-        <section class="pluses">
+        <section class="pluses" id="pluses">
             <div class="container">
                 <h2>У нас есть все для классного <br>
                     отдыха с друзьями!</h2>
@@ -54,12 +59,12 @@
                         <li class="pluses__item pluses__item_2"><span>Аудио-система 5.1 <br> с отличным звуком</span></li>
                         <li class="pluses__item pluses__item_3"><span>Караоке (4 микрофона)</span></li>
                         <li class="pluses__item pluses__item_4"><span>Настольные игры</span></li>
-                        <li class="pluses__item pluses__item_5"><span>Кино сервисы Netflix, IVI, <br> MegoGo, КиноПоиск, Okko</span></li>
+                        <li class="pluses__item pluses__item_5"><span>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</span></li>
                         <li class="pluses__item pluses__item_6"><span>РlаyStаtiоn 5</span></li>     
                      </ul>
             </div> 
         </section>
-        <section class="gallary">
+        <section class="gallary" id="gallary"> 
             <div class="container">
                 <h2>Наши залы</h2>
                 <ul class="gallary__list">
@@ -70,7 +75,7 @@
                  </ul>
             </div> 
         </section>
-        <section class="booking">
+        <section class="booking" id="booking">
             <div class="container">
                 <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">  
                     <h2>Забронировать зал просто</h2>      
@@ -153,24 +158,26 @@
                 </form>
             </div>      
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="container">
                 <h2>О нас</h2>
-                <div class="about-us__item about-us__img"></div>
-                <div class="about-us__item about-us__text">
-                    <p>Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
-                    <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми 
-                    разработками со всего мира.
-                    </p>
+                <div class="about-us__wrapper" >
+                    <div class="about-us__item about-us__img"></div>
+                    <div class="about-us__item about-us__text">
+                        <p>Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+                        <p class="p-last">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми 
+                        разработками со всего мира.
+                        </p>
+                    </div>  
                     <blockquote class="quote">
-                        <p><span>&#10077;</span> GAME OVER -<br>это место незабываемых впечатлений<span>&#10078;</span></p>
+                        <p><span>&#10077;</span> GAME OVER - это место незабываемых впечатлений<span>&#10078;</span></p>
                         <cite>Аркадий Абакшин,<br> создатель игровой<br> территории GAME OVER</cite>
-                    </blockquote>
-                </div>               
-            </div>
+                    </blockquote>                
+                </div>
+            </div>     
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                  <h2>Отзывы поситителей</h2>
                 <blockquote class="reviews__quote">
@@ -209,7 +216,7 @@
             </div>   
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <h2>Контакты</h2>
             <div class="footer__wrapper">
